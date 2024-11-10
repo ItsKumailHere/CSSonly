@@ -1,0 +1,65 @@
+.shop {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .productCard {
+    background-color: var(--secondary);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .productCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .productImage {
+    position: relative;
+    height: 16rem;
+  }
+  
+  .wishlistButton {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .wishlistIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--background);
+  }
+  
+  .productInfo {
+    padding: 1rem;
+  }
+  
+  .productName {
+    font-size: 1.125rem;
+    font-weight: semibold;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  .productPrice {
+    color: var(--accent);
+  }

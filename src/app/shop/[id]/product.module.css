@@ -1,0 +1,124 @@
+.product {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  
+  .productGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .productImage {
+    position: relative;
+    height: 24rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .wishlistButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .wishlistIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--background);
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .productName {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .productRating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .starIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #fbbf24;
+    fill: #fbbf24;
+  }
+  
+  .starIconEmpty {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--accent);
+  }
+  
+  .reviewCount {
+    margin-left: 0.5rem;
+    color: var(--accent);
+  }
+  
+  .productPrice {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .productDescription {
+    color: var(--accent);
+  }
+  
+  .sizeSelector {
+    margin-top: 1rem;
+  }
+  
+  .sizeTitle {
+    font-size: 1.125rem;
+    font-weight: semibold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sizeOptions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .sizeButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    background-color: transparent;
+    color: var(--foreground);
+    font-weight: semibold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .sizeButtonActive {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .addToCartButton {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .productGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .productImage {
+      height: 100%;
+    }
+  }
